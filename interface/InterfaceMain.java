@@ -1,4 +1,4 @@
-public class Main {
+public class InterfaceMain {
     public static void main(String[] args) {
         // InterfaceClass interfaceClass = new InterfaceClass();
         // // interfaceClass.add();
