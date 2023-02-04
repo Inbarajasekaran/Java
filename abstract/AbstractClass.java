@@ -13,9 +13,16 @@ abstract class AbstractClass { // // abstract class
 
 class ClassToCallAbstractClass extends AbstractClass {
 
-    // // @Override
-    // public void print5Numbers() {
-    // }
+    @Override
+    public void print5Numbers() {
+        super.print5Numbers(); // // super keyword used to call the parent function inside the abstract class
+        String saySomething = "By superkeyword we called the parent functionality and by overriding we can also add ne functionalities in below";
+        System.out.println(saySomething);
+        int[] next5Numbers = { 6, 7, 8, 9, 10 };
+        for (int i : next5Numbers) {
+            System.out.println(i);
+        }
+    }
 
     @Override
     void print5Letters() {
@@ -27,6 +34,9 @@ class ClassToCallAbstractClass extends AbstractClass {
 
     // public static void main(String[] args) {
     // ClassToCallAbstractClass callAbstractClass = new ClassToCallAbstractClass();
+    // AbstractClass abstractClass = new ClassToCallAbstractClass();
+    // abstractClass.print5Numbers();
+    // abstractClass.print5Letters();
     // callAbstractClass.print5Numbers();
     // callAbstractClass.print5Letters();
     // }
