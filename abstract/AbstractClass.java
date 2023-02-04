@@ -1,4 +1,4 @@
-abstract class AbstractClassA { // // abstract class
+abstract class AbstractClass { // // abstract class
 
     public void print5Numbers() {
         for (int i = 1; i <= 5; i++) {
@@ -10,7 +10,7 @@ abstract class AbstractClassA { // // abstract class
 
 }
 
-class ClassToCallAbstractClass extends AbstractClassA {
+class ClassToCallAbstractClass extends AbstractClass {
 
     @Override
     void print5Letters() {
